@@ -1,0 +1,20 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "music-beat-detector": "^0.1.1",
+    "speaker": "^0.4.1",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.11"
+  }
+}
