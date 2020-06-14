@@ -19,11 +19,10 @@ const Patches = require('Patches');
 
 // Use export keyword to make a symbol available in scripting debug console
 export const Diagnostics = require('Diagnostics');
-var counterNumber = Scene.root.find('number');
-var scoreNumber = Patches.getScalarValue("score");
+var counterNumber_total = Scene.root.find('total_score');
+var scoreNumber_total = Patches.getScalarValue("total_score");
 
-counterNumber.text = scoreNumber.toString();
-
+counterNumber_total.text = scoreNumber_total.toString();
 
 // To use variables and functions across files, use export/import keyword
 // export const animationDuration = 10;
