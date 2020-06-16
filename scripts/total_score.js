@@ -15,7 +15,7 @@
 
 // How to load in modules
 const Scene = require('Scene'); 
-const Patches = require('Patches'); // Aileen: dommunicate with Patch Editor
+const Patches = require('Patches'); // Aileen: communicate with Patch Editor
 
 // Use export keyword to make a symbol available in scripting debug console
 export const Diagnostics = require('Diagnostics');
