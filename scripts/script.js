@@ -45,7 +45,7 @@ const Patches = require('Patches');
 // Patches.setBooleanValue("hitLeft",Reactive.and())
 
 const Animation = require('Animation');
-var obj = Scene.root.find("rectangle0");
+// var obj = Scene.root.find("rectangle0");
 
 // //set up the length of the animations, 1000 = 1 second
 // var driver = Animation.timeDriver();
@@ -54,9 +54,9 @@ var obj = Scene.root.find("rectangle0");
 // var sampler = Animation.samplers.linear(0, 100);
 
 //set the signal of hitLeft if the object falls into hit range
-Patches.setBooleanValue("hitLeft",Reactive.and(Reactive.ge(obj.transform.y,-50),Reactive.le(obj.transform.y,50)))
+// Patches.setBooleanValue("hitLeft",Reactive.and(Reactive.ge(obj.transform.y,-50),Reactive.le(obj.transform.y,50)))
 
-Diagnostics.watch("hitLeft", Reactive.and(Reactive.ge(obj.transform.y,-50),Reactive.le(obj.transform.y,50)));
+// Diagnostics.watch("hitLeft", Reactive.and(Reactive.ge(obj.transform.y,-50),Reactive.le(obj.transform.y,50)));
 
 // Get the runtime from the Patch Editor
 // const time = Patches.getScalarValue("TimeValue");
