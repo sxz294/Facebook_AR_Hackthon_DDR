@@ -22,7 +22,8 @@ export const Diagnostics = require('Diagnostics');
 var counterNumber = Scene.root.find('number'); // Aileen: find the "number" object in the navigator
 var scoreNumber = Patches.getScalarValue('total_score'); // Aileen: in the patch editor
 
-counterNumber = scoreNumber.toString();
+counterNumber.text=scoreNumber.toString();
+Diagnostics.watch("number",counterNumber.text);
 
 // To use variables and functions across files, use export/import keyword
 // export const animationDuration = 10;
