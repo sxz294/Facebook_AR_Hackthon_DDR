@@ -19,10 +19,10 @@ const Patches = require('Patches'); // Aileen: communicate with Patch Editor
 
 // Use export keyword to make a symbol available in scripting debug console
 export const Diagnostics = require('Diagnostics');
-var counterNumber = Scene.root.find('number'); // Aileen: find the "number" object in the navigator
-var scoreNumber = Patches.getScalarValue('total_score'); // Aileen: in the patch editor
+var number_display = Scene.root.find('score_number'); // Aileen: find the "number" object in the navigator
+var number_in_patch = Patches.getScalarValue('total_score'); // Aileen: in the patch editor
 
-counterNumber.text = scoreNumber.toString();
+number_display.text = number_in_patch.toString();
 
 // To use variables and functions across files, use export/import keyword
 // export const animationDuration = 10;
